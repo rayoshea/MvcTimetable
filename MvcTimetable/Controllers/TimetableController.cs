@@ -12,6 +12,12 @@ namespace MvcTimetable.Controllers
         // GET: Timetable
         public ActionResult Index()
         {
+            ViewBag.Message = "Check your timetable";
+            return View();
+        }
+
+        public ActionResult Display()
+        {
             return View();
         }
     }
